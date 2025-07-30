@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Cài Đặt ROM</title>
+    <link rel="stylesheet" href="huong-dan-cai-rom.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hướng Dẫn Cài Đặt ROM EU Repack</h1>
+        <nav>
+            <ul>
+                <li><a href="#yeu-cau">Yêu cầu chuẩn bị</a></li>
+                <li><a href="#sao-luu">Bước 1: Sao lưu dữ liệu</a></li>
+                <li><a href="#tai-rom">Bước 2: Tải ROM phù hợp</a></li>
+                <li><a href="#che-do-fastboot">Bước 3: Đưa thiết bị về chế độ Fastboot</a></li>
+                <li><a href="#flash-rom">Bước 4: Flash ROM</a></li>
+                <li><a href="#flash-twrp">Bước 4B: Flash qua TWRP</a></li>
+                <li><a href="#khoi-dong">Bước 5: Khởi động lại thiết bị</a></li>
+                <li><a href="#luu-y">Lưu ý quan trọng</a></li>
+            </ul>
+        </nav>
+        <section id="yeu-cau">
+            <h2>Yêu cầu chuẩn bị</h2>
+            <ul>
+                <li>Máy tính chạy Windows/Mac/Linux</li>
+                <li>Cáp kết nối USB chính hãng</li>
+                <li>Pin thiết bị trên 50%</li>
+                <li>Đã cài đặt <b>ADB & Fastboot</b> trên máy tính</li>
+                <li>Đã tải về ROM phù hợp với thiết bị</li>
+            </ul>
+        </section>
+        <section id="sao-luu">
+            <h2>Bước 1: Sao lưu dữ liệu</h2>
+            <p>Hãy sao lưu toàn bộ dữ liệu quan trọng trên thiết bị vì quá trình cài ROM sẽ xóa sạch dữ liệu.</p>
+        </section>
+        <section id="tai-rom">
+            <h2>Bước 2: Tải ROM phù hợp</h2>
+            <p>Truy cập trang chủ hoặc mục <a href="rom-eu-support.html">Hỗ trợ ROM EU</a> để tải về bản ROM phù hợp với thiết bị của bạn.</p>
+        </section>
+        <section id="che-do-fastboot">
+            <h2>Bước 3: Đưa thiết bị về chế độ Fastboot</h2>
+            <ol>
+                <li>Tắt nguồn thiết bị.</li>
+                <li>Nhấn giữ đồng thời nút <b>Giảm âm lượng</b> + <b>Nguồn</b> cho đến khi xuất hiện logo Fastboot.</li>
+            </ol>
+        </section>
+        <section id="flash-rom">
+            <h2>Bước 4: Flash ROM</h2>
+            <ol>
+                <li>Kết nối thiết bị với máy tính bằng cáp USB.</li>
+                <li>Giải nén file ROM vừa tải về.</li>
+                <li>Mở thư mục ROM, chạy file <b>Eu Repack Flash.exe</b> (Windows) hoặc <b>flash_all.sh</b> (Mac/Linux).</li>
+                <li>Chờ quá trình cài đặt hoàn tất (khoảng 5-10 phút).</li>
+            </ol>
+        </section>
+        <section id="flash-twrp">
+            <h2>Bước 4B: Flash ROM qua TWRP Recovery</h2>
+            <ol>
+                <li>Đảm bảo thiết bị đã cài đặt TWRP Recovery.</li>
+                <li>Chuyển file ROM (dạng .zip) vào bộ nhớ trong hoặc thẻ nhớ của thiết bị.</li>
+                <li>Tắt nguồn thiết bị, sau đó vào chế độ Recovery (TWRP) bằng cách nhấn giữ <b>Tăng âm lượng</b> + <b>Nguồn</b>.</li>
+                <li>Trong giao diện TWRP, chọn <b>Wipe</b> &rarr; <b>Advanced Wipe</b> &rarr; tick các mục: Dalvik/ART Cache, System, Data, Cache (không tick Internal Storage) &rarr; vuốt để xác nhận.</li>
+                <li>Quay lại màn hình chính, chọn <b>Install</b>, tìm đến file ROM .zip vừa chép vào máy và vuốt để flash.</li>
+                <li>Chờ quá trình flash hoàn tất, sau đó chọn <b>Reboot System</b> để khởi động lại thiết bị.</li>
+            </ol>
+            <p style="margin-top: 1em; color: #764ba2; font-weight: 500;">Lưu ý: Flash qua TWRP chỉ áp dụng cho ROM dạng .zip, không dùng cho ROM dạng fastboot (.tgz, .img).</p>
+        </section>
+        <section id="khoi-dong">
+            <h2>Bước 5: Khởi động lại thiết bị</h2>
+            <p>Sau khi flash xong, thiết bị sẽ tự động khởi động lại. Lần khởi động đầu tiên có thể mất vài phút, vui lòng kiên nhẫn chờ đợi.</p>
+        </section>
+        <section id="luu-y">
+            <h2>Lưu ý quan trọng</h2>
+            <ul>
+                <li>Đảm bảo không ngắt kết nối thiết bị trong quá trình flash ROM.</li>
+                <li>Chỉ sử dụng ROM phù hợp với model thiết bị.</li>
+                <li>Nếu gặp lỗi, hãy kiểm tra lại driver và cáp kết nối.</li>
+            </ul>
+        </section>
+        <div style="margin-top: 2em;">
+            <a href="index.html">&larr; Quay lại trang chính</a>
+        </div>
+    </div>
+</body>
+</html> 
