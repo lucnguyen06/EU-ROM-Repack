@@ -271,19 +271,20 @@ function showDonationModal() {
                     <div class="donation-options">
                         <div class="donation-option">
                             <h4>Momo</h4>
-                            <p>0123456789</p>
-                            <button class="btn btn-primary copy-btn" data-text="0123456789">Sao chép</button>
+                            <p>0562903904</p>
+                            <p>0363342073</p>
+                            <button class="btn btn-primary copy-btn" data-text="0562903904">Sao chép</button>
                         </div>
                         <div class="donation-option">
-                            <h4>ZaloPay</h4>
-                            <p>0123456789</p>
-                            <button class="btn btn-primary copy-btn" data-text="0123456789">Sao chép</button>
+                            <h4>Sacombank</h4>
+                            <p>050113071041</p>
+                            <button class="btn btn-primary copy-btn" data-text="050113071041">Sao chép</button>
                         </div>
                         <div class="donation-option">
-                            <h4>Bank Transfer</h4>
-                            <p>1234567890</p>
+                            <h4>Agribank</h4>
+                            <p>8888562903904</p>
                             <p>Ngân hàng: Vietcombank</p>
-                            <button class="btn btn-primary copy-btn" data-text="1234567890">Sao chép</button>
+                            <button class="btn btn-primary copy-btn" data-text="8888562903904">Sao chép</button>
                         </div>
                     </div>
                     <div class="donation-note">
@@ -575,4 +576,5 @@ style.textContent = `
         color: #856404;
     }
 `;
+
 document.head.appendChild(style); 
